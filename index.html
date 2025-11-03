@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волшебный сайт с загадкой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="fade-in">
+        <div class="container">
+            <h1>Магический мир анимаций</h1>
+            <p>Исследуйте удивительные возможности CSS и JavaScript</p>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Блок информации -->
+        <section class="info-section fade-in delayed-1">
+            <h2>Добро пожаловать!</h2>
+            <p>Этот сайт демонстрирует современные анимации и интерактивные элементы.</p>
+        </section>
+
+        <!-- Карточки -->
+        <section class="cards-section fade-in delayed-2">
+            <h2>Наши возможности</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Анимации</h3>
+                    <p>Плавные переходы и эффекты</p>
+                    <button class="card-btn">Узнать больше</button>
+                </div>
+                <div class="card">
+                    <h3>Интерактив</h3>
+                    <p>Элементы реагируют на ваши действия</p>
+                    <button class="card-btn">Исследовать</button>
+                </div>
+                <div class="card">
+                    <h3>Загадки</h3>
+                    <p>Решите головоломку для сюрприза</p>
+                    <button class="card-btn">Начать</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Загадка -->
+        <section class="riddle-section fade-in delayed-3">
+            <h2>Разгадайте загадку</h2>
+            <div class="riddle">
+                <p>"Без ног и без крыл я летаю,<br>
+                   Без глаз и без рта я рыдаю.<br>
+                   Что это?"</p>
+                <div class="riddle-options">
+                    <button class="option-btn" data-answer="wrong">Солнце</button>
+                    <button class="option-btn" data-answer="wrong">Ветер</button>
+                    <button class="option-btn" data-answer="correct">Облако</button>
+                    <button class="option-btn" data-answer="wrong">Птица</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="fade-in delayed-4">
+        <div class="container">
+            <p>&copy; 2024 Волшебный сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="congratsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Поздравляем, <span id="winnerName">[Имя]</span>!</h2>
+            <p>Вы превратились в гея!</p>
+            <div class="confetti">8======Ð</div>
+            <p>Даев настоящий гей!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
